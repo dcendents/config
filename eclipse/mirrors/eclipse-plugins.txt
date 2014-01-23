@@ -1,0 +1,65 @@
+certificates exported from Chrome (X.509 DER)
+added to keystore: 
+		keytool -import -trustcacerts -alias forefront -file MSForeFrontTMGHttps.cer -keystore custom.truststore
+		keytool -import -trustcacerts -alias github -file github-certificate.cer -keystore custom.truststore
+		keytool -import -trustcacerts -alias google -file google-certificate.cer -keystore custom.truststore
+		keytool -import -trustcacerts -alias google2 -file google-certificate2.cer -keystore custom.truststore
+		keytool -import -trustcacerts -alias google3 -file google-certificate3.cer -keystore custom.truststore
+		keytool -import -trustcacerts -alias google4 -file google-certificate4.cer -keystore custom.truststore
+
+Load the keystore in eclipse.ini -Djavax.net.ssl.trustStore=D:/dev/mirrors/custom.truststore -Djavax.net.ssl.trustStorePassword=Password123
+
+
+
+
+
+ADT Plugin
+	https://dl-ssl.google.com/android/eclipse/
+
+Chrome Dev Tools
+	http://chromedevtools.googlecode.com/svn/update/dev/
+
+My Marketplace
+	http://marketplace.eclipse.org/user/9069/p2/repo
+
+Greclipse
+	http://dist.springsource.org/release/GRECLIPSE/e4.3/
+
+Jeeeyul's Eclipse Themes
+	https://raw.github.com/jeeeyul/eclipse-themes/master/net.jeeeyul.eclipse.themes.updatesite
+
+m2e
+	http://download.eclipse.org/technology/m2e/releases
+
+STS-Release
+	http://dist.springsource.com/release/TOOLS/gradle
+
+Subclipse 1.10.x
+	http://subclipse.tigris.org/update_1.10.x
+
+TestNG
+	http://beust.com/eclipse
+
+GMXHome
+	http://andrei.gmxhome.de/eclipse/ 
+
+StartExplorer
+	http://basti1302.github.com/startexplorer/update/
+
+EclipseRunner
+	http://eclipserunnerplugin.googlecode.com/svn/trunk/EclipseRunnerSite
+	
+XPathEvaluation
+	http://eclipse-xpath-evaluation-plugin.googlecode.com/svn/trunk/eclipse-xpath-evaluation-plugin-update-site/
+	
+NavigatorExtension
+	https://github.com/missedone/navigatorext/tree/master/site
+	
+	
+	
+	
+	
+	
+	
+	
+	

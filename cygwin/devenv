@@ -1,0 +1,65 @@
+
+set -o emacs
+
+#xhost +
+
+#export PS1='$PWD>'
+
+alias ll="ls -l"
+
+alias "c:"="cd /cygdrive/c"
+alias "d:"="cd /cygdrive/d"
+export C=/cygdrive/c
+export D=/cygdrive/d
+
+alias xx="xterm -bg black -fg yellow -cr red -ms red -j -s -sb -rightbar -sl 10000 +tb"
+
+#alias java5="export JAVA_HOME=\"C:\\dev\\Java\\jdk1.5.0_09\""
+#alias java6="export JAVA_HOME=\"C:\\dev\\Java\\jdk1.6.0_29\""
+alias java7="export JAVA_HOME=\"C:\\Program Files\\Java\\jdk1.7.0_25\""
+
+java7
+
+#export CVSROOT=:pserver:danielbe@gdps:/cvs/repository1
+
+#export PATH=/usr/sbin:/cygdrive/c/download/programs2/xmlstarlet/xmlstarlet-1.0.1-win32/xmlstarlet-1.0.1:$PATH
+export PATH=/usr/sbin:$(cygpath $JAVA_HOME)/bin:$PATH:.
+
+export WINHOME=/cygdrive/c/Users/t0146245
+export WH="$WINHOME"
+
+#export WK=/cygdrive/c/dev/eclipse-3.7.1/workspaces/workspace
+#alias wk="cd $WK"
+
+#export MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=256M"
+
+#alias "mvn-nt"="mvn -Dmaven.test.skip.exec=true"
+#alias "mvn-int"="mvn -Dmaven.test.run.type=integration"
+#alias "mvn-all"="mvn -Pall"
+
+#alias chkprj="find . -name project.xml -exec grep currentVersion {} /dev/null \; ; grep ^maven.multiproject.excludes project.properties ; find . -name project.xml -exec grep \"<id>.*:.*</id>\" {} /dev/null \;"
+#alias chkprj="find . -name project.xml -exec grep currentVersion {} /dev/null \; ; grep ^maven.multiproject.excludes project.properties ;"
+#alias chkss="find . -exec grep SNAPSHOT {} /dev/null \; | grep -v .*project\.xml.*currentVersion.* | grep -v release/release.xml | grep -v /maven.xml | grep -v \./review | grep -v \./xdocs; cvs -q -n update"
+#alias cvs-resolve="cvs commit -m \"resolving dependencies before a release\" "
+#alias cvs-project="cvs commit -m \"reset module list\" project.properties"
+
+#alias chkprj2="echo \"Modules Versions:\" ; find . -name pom.xml -exec xml sel -N mvn=\"http://maven.apache.org/POM/4.0.0\" -t -v \"mvn:project/mvn:version\" {} \; -print ; echo \"Modules:\" ; find . -name pom.xml -exec xml sel -N mvn=\"http://maven.apache.org/POM/4.0.0\" -t -v \"mvn:project/mvn:modules\" {} \; -print"
+#alias chkprj2b="echo \"Modules Versions:\" ; find . -name pom.xml -exec xml sel -t -v \"project/version\" {} \; -print ; echo \"Modules:\" ; find . -name pom.xml -exec xml sel -t -v \"project/modules\" {} \; -print"
+#alias chkss2a="find . -name pom.xml -exec grep SNAPSHOT {} /dev/null \;"
+#alias chkss2b="find . -exec grep SNAPSHOT {} /dev/null \; | grep -v .*pom\.xml:.* | grep -v release.properties"
+#alias cvs-pom="sed 's% <module>% <!--<module>%g' pom.xml > pom2.xml ; sed 's%</module>$%</module>-->%g' pom2.xml > pom.xml ; rm pom2.xml; cvs commit -m \"reset module list\" pom.xml"
+#alias ne-pom="nedit \$(find . -name pom.xml) &"
+#alias chk2="eval \"ne-pom\" ; chkprj2 ; chkss2a"
+#alias chk2b="eval \"ne-pom\" ; chkprj2 ; chkss2a ; chkss2b"
+
+#alias np="/cygdrive/c/Program\ Files/Notepad++/notepad++.exe"
+function np() { 
+	for file in "$@"
+	do
+		winfile=$(cygpath -w "$file")
+		/cygdrive/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe "$winfile"
+	done
+}
+
+fortune
+
