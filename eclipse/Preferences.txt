@@ -4,5 +4,6 @@ Java
 		Content Assist
 			Favorites
 				org.assertj.core.api.Assertions
+				org.mockito.Matchers
 				org.mockito.Mockito
 
