@@ -1,0 +1,8 @@
+
+Java
+	Editor
+		Content Assist
+			Favorites
+				org.assertj.core.api.Assertions
+				org.mockito.Mockito
+
