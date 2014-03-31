@@ -11,5 +11,6 @@ Deleting a remote branch:
 
 Push all branches
 
-	for a in $(git branch --list --remote "<remote_src>/*" | grep -v --regexp='->') do git push "<remote_dest>" "${a}:refs/heads/${a//<remote_src>\/}" done
-	
+	export SRC_REMOTE=svn
+	export DST_REMOTE=origin
+	for a in $(git branch --list --remote "${SRC_REMOTE}/*" | grep -v --regexp='->') do git push "${DST_REMOTE}" "${a}:refs/heads/${a//${SRC_REMOTE}\/}" done
