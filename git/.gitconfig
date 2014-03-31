@@ -3,5 +3,9 @@
 	email = 
 [http]
 	postBuffer = 524288000
+	proxy = localhost:3128
+	sslverify = false
+[url "https://"]
+	insteadOf = git://
 [credential]
 	helper = wincred
