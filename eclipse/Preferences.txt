@@ -4,6 +4,9 @@ Java
 		Content Assist
 			Favorites
 				org.assertj.core.api.Assertions
+				org.mockito.BDDMockito
 				org.mockito.Matchers
 				org.mockito.Mockito
+				com.googlecode.catchexception.apis.CatchExceptionAssertJ
+				com.googlecode.catchexception.CatchException
 
