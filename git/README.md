@@ -2,6 +2,8 @@ Git
 ======
 
 [TOC]
+
+* toc
 {:toc}
 
 #### Renaming a remote branch: 
