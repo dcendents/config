@@ -23,6 +23,10 @@ Git
 #### List all files from history
     git log --pretty=format: --name-only --diff-filter=A | sort -
 
+#### Make a file executable
+
+	git update-index --chmod=+x <the_file>
+
 ## Git clone from Subversion
 
 #### Convert the project using subgit (faster, more reliable and gives better results than git-svn)
