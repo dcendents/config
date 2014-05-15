@@ -30,6 +30,7 @@ Git
 ## Git clone from Subversion
 
 #### Convert the project using subgit (faster, more reliable and gives better results than git-svn)
+    set JAVA_OPTS=-Xverify:none -Djava.awt.headless=true -Dsubgit.svn.connectTimeout=300000 -Dsubgit.svn.readTimeout=600000
     subgit.bat import --trunk trunk --branches branches --tags tags --username dbeland --password ******** --non-interactive  --svn-url https://... {projectName}.git
 
 #### Clone the project to perform the work
