@@ -77,18 +77,30 @@ Or Identify the project size and biggest files (even deleted files)
     git gc --aggressive --prune=now
     git count-objects -v
 
-#### rename a directory (when module cannot be extracted because the firectory had been renamed at some point)
+#### rename a directory (when module cannot be extracted because the directory had been renamed at some point)
     git filter-branch --tag-name-filter cat --prune-empty --index-filter 'git ls-files -s | sed "s-\t{folder}/\"*-\t{new_folder}/-" | GIT_INDEX_FILE=$GIT_INDEX_FILE.new git update-index --index-info && mv "$GIT_INDEX_FILE.new" "$GIT_INDEX_FILE"' -- --all
 
 #### delete all files except
     git filter-branch --tag-name-filter cat --prune-empty --index-filter "git rm --cached -r . && git reset $GIT_COMMIT {file_to_keep}" -- --all
 
+#### delete empty commits from history
+    git filter-branch --commit-filter 'git_commit_non_empty_tree "$@"'  -- --all
+    git reset --hard
+    git for-each-ref --format="%(refname)" refs/original/ | xargs -n 1 git update-ref -d
+    git reflog expire --expire=now --all
+    git gc --aggressive --prune=now
+    git count-objects -v
+    git rev-list HEAD --count --all
 
-#### Batch remove files
+#### Batch scripts
 
 See scripts:
   * gitrm.sh
+    * Query biggest files and ask which one should be removed
   * gitrmdir.sh dirname
+    * Remove files or directory recursively
+  * gitclean.sh
+    * Clean empty commits from the history, keep runing until there are no more to remove
 
 #### Push to git
     git remote add origin https://...
