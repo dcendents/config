@@ -25,7 +25,10 @@ Git
 
 #### Make a file executable
 
+It seems staging (adding) the modified script before committing does not work, or using the -a switch to git commit. To work properly, start from a clean state and run the following 2 commands.
+
 	git update-index --chmod=+x <the_file>
+    git commit -m "Making script executable"
 
 ## Git clone from Subversion
 
