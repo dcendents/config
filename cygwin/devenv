@@ -25,7 +25,9 @@ export WH="$WINHOME"
 export WK=/cygdrive/c/JI2STC
 alias wk="cd $WK"
 
-export MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=256M -javaagent:C:/Users/dbeland/.m2/maven-color-agent-0.3.jar"
+export MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=256M -javaagent:C:/Users/dbeland/.m2/maven-color-agent-0.4.jar"
+# See https://github.com/jcgay/maven-color for the binaries
+# Also copy maven-color-logger-0.4.jar in $M2_HOME/lib/ext
 
 
 #alias np="/cygdrive/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe"
