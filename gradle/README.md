@@ -4,6 +4,7 @@ Gradle
 #### Loading common config from a repository: 
 
 project build.gradle:
+
 	buildscript { 
 		// Define the repository where CommonConfig will be found
 		repositories {
@@ -28,6 +29,7 @@ project build.gradle:
 
 
 repositories.gradle:
+
 	project.buildscript.repositories.clear()
 
 	project.buildscript {
@@ -46,6 +48,7 @@ repositories.gradle:
 	}
 
 buildscriptDependencies.gradle:
+
 	project.buildscript {
 		dependencies {
 			classpath 'com.android.tools.build:gradle:0.11.1',
