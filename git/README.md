@@ -30,6 +30,12 @@ It seems staging (adding) the modified script before committing does not work, o
 	git update-index --chmod=+x <the_file>
     git commit -m "Making script executable"
 
+#### Forcing LF line ending on windows
+
+Mainly for bash scripts to run under cygwin. Create a file .gitattributes with the following format:
+
+	gradlew text eol=lf
+
 ## Git clone from Subversion
 
 #### Convert the project using subgit (faster, more reliable and gives better results than git-svn)
