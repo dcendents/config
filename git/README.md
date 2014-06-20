@@ -36,6 +36,15 @@ Mainly for bash scripts to run under cygwin. Create a file .gitattributes with t
 
 	gradlew text eol=lf
 
+#### Cloning over a bad connection
+
+If git clone fails, the work around to do a full clone gradually is with the following commands:
+
+	git clone https://server/{project}.git --depth=1 --no-single-branch
+	cd {project}
+	git fetch origin --depth=N 		#do it mutiple times, increasing N each time
+	git fetch origin --unshallow 	#to fetch all that is remaining
+
 ## Git clone from Subversion
 
 #### Convert the project using subgit (faster, more reliable and gives better results than git-svn)
