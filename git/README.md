@@ -14,6 +14,15 @@ Git
 
 	git push <remote> :<branch_name>
 
+#### Prune branches: 
+##### Prune remote branches
+
+	git fetch <remote> --prune
+	
+##### Delete all local branches which have been merged into the current branch
+
+	git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
+
 #### Push all branches from a remote to another one
 
 	export SRC_REMOTE=svn
