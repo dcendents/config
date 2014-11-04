@@ -45,6 +45,19 @@ Mainly for bash scripts to run under cygwin. Create a file .gitattributes with t
 
 	gradlew text eol=lf
 
+#### Restore a deleted file
+##### Find the file:
+
+	git log --diff-filter=D --summary | grep delete
+	
+##### Find the commit
+
+	git log --diff-filter=D --summary > list.txt
+	
+##### Restore the file
+
+	git checkout <commit>~1 filename
+
 #### Cloning over a bad connection
 
 If git clone fails, the work around to do a full clone gradually is with the following commands:
