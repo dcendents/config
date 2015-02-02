@@ -16,8 +16,10 @@ Git
 
 #### Track every remote branch and synchronize them: 
 
-	for remote in $(git branch --list --remote | grep -v --regexp='->') do git checkout --track $remote ; done
-	for remote in $(git branch --list --remote | grep -v --regexp='->') do git checkout $remote ; git merge $remote; done
+	export REMOTE=origin
+	git fetch ${REMOTE}
+	for r in $(git branch --list --remote "${REMOTE}/*" | grep -v --regexp='->'); do git checkout --track $r ; done
+	for r in $(git branch --list | grep -v --regexp='->'); do git checkout $r ; git merge ${REMOTE}/$r; done
 	git checkout master
 
 #### Prune branches: 
