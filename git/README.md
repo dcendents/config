@@ -66,6 +66,10 @@ Mainly for bash scripts to run under cygwin. Create a file .gitattributes with t
 
 	git checkout <commit>~1 filename
 
+#### List all commits between 2 branches
+
+	git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit {branch1}..{branch2}
+
 #### Cloning over a bad connection
 
 If git clone fails, the work around to do a full clone gradually is with the following commands:
