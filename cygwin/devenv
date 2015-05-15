@@ -25,7 +25,7 @@ export WH="$WINHOME"
 export WK=/cygdrive/c/JI2STC
 alias wk="cd $WK"
 
-export MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=256M -javaagent:C:/Users/dbeland/.m2/maven-color-agent-0.4.jar"
+export MAVEN_OPTS="-Xmx1024M -XX:MaxPermSize=256M"
 # See https://github.com/jcgay/maven-color for the binaries
 # Also copy maven-color-logger-0.4.jar in $M2_HOME/lib/ext
 
@@ -37,6 +37,11 @@ function np() {
 		winfile=$(cygpath -w "$file")
 		/cygdrive/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe "$winfile"
 	done
+}
+
+# Use it instead of tee to strip ansi color sequences from the text file
+function stee() { 
+	tee >(sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g" > $1)
 }
 
 fortune

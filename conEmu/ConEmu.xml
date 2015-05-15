@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2014-06-16 11:38:08" build="140416">
+		<key name=".Vanilla" modified="2015-05-15 13:57:00" build="140707">
 			<value name="ColorTable00" type="dword" data="00000000"/>
 			<value name="ColorTable01" type="dword" data="00ee0000"/>
 			<value name="ColorTable02" type="dword" data="0000cd00"/>
@@ -79,13 +79,13 @@
 			<value name="StoreTaskbarkTasks" type="hex" data="00"/>
 			<value name="StoreTaskbarCommands" type="hex" data="00"/>
 			<value name="SaveCmdHistory" type="hex" data="01"/>
-			<value name="CmdLineHistory" type="multi"><line data="cmd -cur_console:n"/><line data="cmd"/></value>
+			<value name="CmdLineHistory" type="multi"><line data="{CygWin64}"/><line data="{cmd}"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\JI2STC\gittest&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="{GitBash}"/><line data="cmd -cur_console:n:d:&quot;C:\JI2STC\IntelligenceVisualAnalytics\database&quot;"/><line data="{PowerShell}"/><line data="cmd -cur_console:n:d:&quot;C:\MVAP\MVAP_database&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\JI2STC\lumify\web\war\src\main\webapp&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\dev\github&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\JI2STC\lumify&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\bigtable&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\miniweb&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\securegraph&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\lumify&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\JI2STC\CamelRouteSample&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="{GitBash} -cur_console:n:d:&quot;C:\JI2STC\SampleCamelRoute&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\JI2STC\CaseBasedReasoner\target\site\apidocs&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\JI2STC\CaseBasedReasoner\target\site\apidocs&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="cmd -cur_console:n:d:&quot;C:\dev\narayana-full-5.0.4.Final&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\dev\narayana-full-5.0.4.Final\bin&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\jbworkspace\camel-cxf-contract-first-blueprint&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\camel-trade&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="cmd -cur_console:n:d:&quot;C:\tmp2\jboss-eap-quickstarts-6.3.0.GA\wsat-simple&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\dev\jboss-eap-6.3&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\dev\forge-distribution-2.14.0.Final\bin&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\tmp2\apache-camel-2.14.1\examples\camel-example-cxf-blueprint&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="cmd"/><line data="cmd -cur_console:n:d:&quot;\\VBOXSVR\Documents\ESB&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\jboss-fuse-6.1.0.redhat-379&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="{GitBash} -cur_console:n:d:&quot;C:\dev\jboss-fuse-6.1.0.redhat-379\deploy&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\dev\nexus\nexus-2.11.1-01\bin&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\msysgit\git&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\JI2STC\release&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\jboss-eap-6.1\standalone\data&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\tmp\releases-20140910.tar\ca\gc\rddc\rulebasedreasoner\RuleBasedReasonerEAR\1.0&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\tmp\releases-20140910.tar\ca\gc\rddc\mri\MultiReasonerInferenceEAR\1.0&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\tmp\releases-20140910.tar\ca\gc\rddc\kigar\KIGAREAR\1.0&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\tmp\releases-20140910.tar\ca\gc\rddc\descriptivelogicreasoner\DescriptiveLogicReasonerEAR\1.0&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="{GitBash} -cur_console:n:d:&quot;C:\JI2STC\KIGARConfigurationManager&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\JI2STC\TripleStore&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="cmd -cur_console:n:d:&quot;C:\JI2STC\DBConfiguration\Configuration&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\jboss-eap-6.1\bin&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\Users\Public\Apps\eclipse&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\JI2STC&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\tmp&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\JI2STC&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\JI2STC\Dummy&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\JI2STC\S3UI&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\config\windows&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="{GitBash} -cur_console:n:d:&quot;C:\dev\github\config\windows&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\dev\github\config\windows&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd $(dirname &quot;C:\dev\github\config\windows\ConEmu.reg&quot;) ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="{GitBash} -cur_console:n"/><line data="cmd -cur_console:n"/></value>
 			<value name="SingleInstance" type="hex" data="01"/>
 			<value name="ShowHelpTooltips" type="hex" data="01"/>
 			<value name="Multi" type="hex" data="01"/>
 			<value name="Multi.ShowButtons" type="hex" data="01"/>
 			<value name="Multi.NumberInCaption" type="hex" data="00"/>
-			<value name="Multi.CloseConfirm" type="hex" data="00"/>
+			<value name="Multi.CloseConfirm" type="hex" data="01"/>
 			<value name="Multi.CloseEditViewConfirm" type="hex" data="00"/>
 			<value name="Multi.NewConfirm" type="hex" data="00"/>
 			<value name="Multi.UseArrows" type="hex" data="00"/>
@@ -126,11 +126,11 @@
 			<value name="ColorKeyValue" type="dword" data="00010101"/>
 			<value name="UseCurrentSizePos" type="hex" data="01"/>
 			<value name="WindowMode" type="dword" data="0000051f"/>
-			<value name="ConWnd Width" type="dword" data="0000009d"/>
+			<value name="ConWnd Width" type="dword" data="00000098"/>
 			<value name="ConWnd Height" type="dword" data="00000033"/>
 			<value name="Cascaded" type="hex" data="01"/>
-			<value name="ConWnd X" type="dword" data="000000fe"/>
-			<value name="ConWnd Y" type="dword" data="00000023"/>
+			<value name="ConWnd X" type="dword" data="0000075d"/>
+			<value name="ConWnd Y" type="dword" data="00000031"/>
 			<value name="16bit Height" type="dword" data="00000000"/>
 			<value name="AutoSaveSizePos" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
@@ -503,9 +503,9 @@
 			<value name="DndLKey" type="hex" data="00"/>
 			<value name="DndRKey" type="hex" data="a2"/>
 			<value name="WndDragKey" type="dword" data="00121101"/>
-				<key name="Tasks" modified="2014-06-16 11:38:08" build="140416">
+				<key name="Tasks" modified="2015-05-15 13:57:01" build="140707">
 				<value name="Count" type="dword" data="00000009"/>
-						<key name="Task1" modified="2014-06-16 11:38:08" build="140416">
+						<key name="Task1" modified="2015-05-15 13:57:01" build="140707">
 					<value name="Name" type="string" data="{cmd}"/>
 					<value name="GuiArgs" type="string" data="/dir &quot;%USERPROFILE%&quot;"/>
 					<value name="Cmd1" type="string" data="-new_console:C:cmd.exe &quot;cmd.exe&quot;"/>
@@ -513,7 +513,7 @@
 					<value name="Count" type="dword" data="00000001"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 				</key>
-						<key name="Task2" modified="2014-06-16 11:38:08" build="140416">
+						<key name="Task2" modified="2015-05-15 13:57:01" build="140707">
 					<value name="Name" type="string" data="{PowerShell}"/>
 					<value name="GuiArgs" type="string" data="/dir &quot;%USERPROFILE%&quot;"/>
 					<value name="Cmd1" type="string" data="PowerShell"/>
@@ -521,7 +521,7 @@
 					<value name="Count" type="dword" data="00000001"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 				</key>
-						<key name="Task3" modified="2014-06-16 11:38:08" build="140416">
+						<key name="Task3" modified="2015-05-15 13:57:01" build="140707">
 					<value name="Name" type="string" data="{PowerShell (Admin)}"/>
 					<value name="GuiArgs" type="string" data="/dir &quot;%USERPROFILE&quot;"/>
 					<value name="Cmd1" type="string" data="PowerShell -new_console:a"/>
@@ -529,7 +529,7 @@
 					<value name="Count" type="dword" data="00000001"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 				</key>
-						<key name="Task4" modified="2014-06-16 11:38:08" build="140416">
+						<key name="Task4" modified="2015-05-15 13:57:01" build="140707">
 					<value name="Name" type="string" data="{CygWin}"/>
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Cmd1" type="string" data="%ConEmuDrive%\cygwin\bin\bash.exe -new_console:C:%ConEmuDrive%\cygwin\Cygwin.ico --login -i"/>
@@ -537,7 +537,7 @@
 					<value name="Count" type="dword" data="00000001"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 				</key>
-						<key name="Task5" modified="2014-06-16 11:38:08" build="140416">
+						<key name="Task5" modified="2015-05-15 13:57:01" build="140707">
 					<value name="Name" type="string" data="{CygWin64}"/>
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Cmd1" type="string" data="C:\cygwin64\bin\bash.exe -new_console:C:C:\cygwin64\Cygwin.ico --login -i"/>
@@ -545,7 +545,7 @@
 					<value name="Count" type="dword" data="00000001"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 				</key>
-						<key name="Task6" modified="2014-06-16 11:38:08" build="140416">
+						<key name="Task6" modified="2015-05-15 13:57:01" build="140707">
 					<value name="Name" type="string" data="{MinGW}"/>
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Cmd1" type="string" data="%ConEmuDrive%\MinGW\msys\1.0\bin\bash.exe -new_console:C:%ConEmuDrive%\MinGW\msys\1.0\msys.ico --login -i"/>
@@ -553,7 +553,7 @@
 					<value name="Count" type="dword" data="00000001"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 				</key>
-						<key name="Task7" modified="2014-06-16 11:38:08" build="140416">
+						<key name="Task7" modified="2015-05-15 13:57:01" build="140707">
 					<value name="Name" type="string" data="{VC++ 2012}"/>
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Cmd1" type="string" data="cmd /k &quot;C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\vcvars32.bat&quot; &quot;-new_console:C:C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\WDExpress.exe&quot;"/>
@@ -562,7 +562,7 @@
 					<value name="Count" type="dword" data="00000001"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 				</key>
-						<key name="Task8" modified="2014-06-16 11:38:08" build="140416">
+						<key name="Task8" modified="2015-05-15 13:57:01" build="140707">
 					<value name="Name" type="string" data="{cmd &amp; PowerShell}"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data="/dir &quot;%USERPROFILE%&quot;"/>
@@ -571,7 +571,7 @@
 					<value name="Active" type="dword" data="00000001"/>
 					<value name="Count" type="dword" data="00000002"/>
 				</key>
-						<key name="Task9" modified="2014-06-16 11:38:08" build="140416">
+						<key name="Task9" modified="2015-05-15 13:57:01" build="140707">
 					<value name="Name" type="string" data="{GitBash}"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=""/>
@@ -580,10 +580,10 @@
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
 			</key>
-				<key name="Apps" modified="2014-06-16 11:38:08" build="140416">
+				<key name="Apps" modified="2015-05-15 13:57:01" build="140707">
 				<value name="Count" type="dword" data="00000000"/>
 			</key>
-				<key name="Colors" modified="2014-06-16 11:38:08" build="140416">
+				<key name="Colors" modified="2015-05-15 13:57:01" build="140707">
 				<value name="Count" type="dword" data="00000000"/>
 			</key>
 			<value name="SetDefaultTerminalStartupTSA" type="hex" data="01"/>
@@ -604,6 +604,11 @@
 			<value name="Key.MaximizeHeight" type="dword" data="00000000"/>
 			<value name="DefaultTerminalNewWindow" type="hex" data="00"/>
 			<value name="RetardInactivePanes" type="hex" data="00"/>
+			<value name="DefaultTerminalAgressive" type="hex" data="01"/>
+			<value name="AnsiLog" type="hex" data="00"/>
+			<value name="AnsiLogPath" type="string" data="%ConEmuDir%\Logs\"/>
+			<value name="Multi.DupConfirm" type="hex" data="01"/>
+			<value name="Multi.DetachConfirm" type="hex" data="01"/>
 		</key>
 	</key>
 </key>
