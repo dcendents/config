@@ -18,3 +18,12 @@ Take ownership of the folder:
 Set the permissions
 
     ICACLS "e:\" /reset /T
+
+
+### Moving a window back on the screen
+
+When the standard Shift+Windows+Arrows does not work, the following should fix it:
+
+  1. Make sure the focus is on the window (Alt-Tab or select on Task bar)
+  1. Right click on the app in the task bar and select Move (might need to Shift+Right-click)
+  1. Press on one of the arrow keys, the window should appear
