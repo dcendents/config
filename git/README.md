@@ -35,7 +35,7 @@ Git
 
 	export SRC_REMOTE=svn
 	export DST_REMOTE=origin
-	for a in $(git branch --list --remote "${SRC_REMOTE}/*" | grep -v --regexp='->') do git push "${DST_REMOTE}" "${a}:refs/heads/${a//${SRC_REMOTE}\/}" done
+	for a in $(git branch --list --remote "${SRC_REMOTE}/*" | grep -v --regexp='->') do git push "${DST_REMOTE}" "${a}:refs/heads/${a//${SRC_REMOTE}\/}" --tags done
 
 #### List all files from history
     git log --pretty=format: --name-only --diff-filter=A | sort -
