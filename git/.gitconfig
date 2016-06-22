@@ -5,7 +5,26 @@
 	postBuffer = 524288000
 	proxy = localhost:3128
 	sslverify = false
+[https]
+	proxy = localhost:3128
 [url "https://"]
 	insteadOf = git://
 [credential]
 	helper = wincred
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+	path = C:/Program Files/KDiff3/kdiff3.exe
+[diff]
+	guitool = winmerge
+[difftool "kdiff3"]
+	path = C:/Program Files (x86)/KDiff3/kdiff3.exe
+[core]
+	editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
+	autocrlf = True
+	safecrlf = false
+[difftool "winmerge"]
+	path = C:/Program Files (x86)/WinMerge/winmergeu.exe
+	cmd = \"C:/Program Files (x86)/WinMerge/winmergeu.exe\" -e -u \"$LOCAL\" \"$REMOTE\"
+[push]
+	default = simple

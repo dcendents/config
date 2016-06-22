@@ -3,10 +3,16 @@ Java
 	Editor
 		Content Assist
 			Favorites
+				com.googlecode.catchexception.apis.CatchExceptionAssertJ
+				com.googlecode.catchexception.CatchException
+				com.googlecode.catchexception.apis.BDDCatchException
 				org.assertj.core.api.Assertions
+				org.assertj.core.api.BDDAssertions
+				org.assertj.core.util.IterableUtil
+				org.mockito.AdditionalAnswers
 				org.mockito.BDDMockito
 				org.mockito.Matchers
 				org.mockito.Mockito
-				com.googlecode.catchexception.apis.CatchExceptionAssertJ
-				com.googlecode.catchexception.CatchException
-
+				org.ops4j.pax.exam.CoreOptions
+				org.ops4j.pax.exam.karaf.options.KarafDistributionOption
+				org.powermock.api.mockito.PowerMockito
