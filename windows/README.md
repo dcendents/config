@@ -1,4 +1,17 @@
-Windows
+Windows 10
+======
+
+#### Enable Dark Theme
+
+  1. Enable a System-wide Dark Theme
+    - Run Windows10DarkTheme.reg, then log off and log back in
+  1. Microsoft Edge
+    - Select Settings. 
+    - Select the “Choose a theme” box
+    - pick “Dark” 
+
+
+Windows 7
 ======
 
 #### Adding quick launch in Windows 7
