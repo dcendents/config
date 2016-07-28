@@ -9,6 +9,12 @@ Windows 10
     - Select Settings. 
     - Select the “Choose a theme” box
     - pick “Dark” 
+  1. Window Borders
+    - Open Settings
+	- Select Colors
+	- Set Automatically pick an accent color to off
+	- Choose a color
+	- Set Show color on start, taskbar, action center, and title bar to on
 
 
 Windows 7
