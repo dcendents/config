@@ -42,6 +42,7 @@ export MAVEN_OPTS="-Xmx1024M -XX:MaxPermSize=256M -Dmaven.ext.class.path=C:/User
 # See https://github.com/jcgay/maven-color for the binaries
 # Also copy maven-color-logger-0.4.jar in $M2_HOME/lib/ext
 
+alias checksite="open target/pdf/*.pdf target/staging/*/index.html"
 
 #alias np="/cygdrive/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe"
 function np() { 
@@ -63,6 +64,14 @@ function open() {
 # Use it instead of tee to strip ansi color sequences from the text file
 function stee() { 
 	tee >(sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g" > $1)
+}
+
+function tarx() { 
+	tar cf - $1 -P | pv -s $(du -sb $1 | awk '{print $1}') | xz -9 > $1.tar.xz
+}
+
+function tarz() { 
+	tar cf - $1 -P | pv -s $(du -sb $1 | awk '{print $1}') | gzip -9 > $1.tar.gz
 }
 
 fortune

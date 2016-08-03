@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2016-06-22 14:42:48" build="160619">
+		<key name=".Vanilla" modified="2016-08-03 11:37:12" build="160619">
 			<value name="ColorTable00" type="dword" data="00000000"/>
 			<value name="ColorTable01" type="dword" data="00ee0000"/>
 			<value name="ColorTable02" type="dword" data="0000cd00"/>
@@ -73,13 +73,16 @@
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
 			<value name="StartTasksFile" type="string" data=""/>
-			<value name="StartTasksName" type="string" data="{CygWin64}"/>
+			<value name="StartTasksName" type="string" data="{mintty}"/>
 			<value name="StartFarFolders" type="hex" data="00"/>
 			<value name="StartFarEditors" type="hex" data="00"/>
 			<value name="StoreTaskbarkTasks" type="hex" data="00"/>
 			<value name="StoreTaskbarCommands" type="hex" data="00"/>
 			<value name="SaveCmdHistory" type="hex" data="01"/>
-			<value name="CmdLineHistory" type="multi"><line data="{cmd}"/><line data="{PowerShell}"/><line data="{GitBash}"/><line data="{OldGitBash}"/><line data="{Cygwin-mintty}"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\JI2STC\release&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="&quot;cmd.exe&quot;"/><line data="cmd"/><line data="{GitBash} -cur_console:n:d:&quot;C:\JI2STC\GitSync&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\JI2STC\GitSync\projects&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\dev\github\config\windows&quot;"/><line data="cmd -cur_console:n"/><line data="cmd -cur_console:n:d:&quot;C:\JI2STC\GitSync&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\git\PortableGit\usr\bin&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\git\PortableGit\bin&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\git-sdk-64\usr\src\MINGW-packages\mingw-w64-git\src\git&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\git-sdk-64\usr\src\MINGW-packages\mingw-w64-git\src\git\cmd&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\JI2STC\RouteAnnotatedDocument\RouteAnnotateDocumentFeature\target\RouteAnnotateDocumentFeature-1.0-SNAPSHOT\resources\etc\sample&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\JI2STC\RouteAnnotatedDocument\RouteAnnotateDocumentFeature\target\RouteAnnotateDocumentFeature-1.0-SNAPSHOT\resources\sql\RouteAnnotateDocument&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="{CygWin64}"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\branch-api-plugin&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\literate-plugin&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="cmd -cur_console:n:d:&quot;C:\dev\orientdb-community-2.0.11\bin&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\jboss-eap-6.1\bin&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\JI2STC\LumifyCSV&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\JI2STC&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\JI2STC\MultiReasonerInference&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\tmp2\release&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="cmd -cur_console:n:d:&quot;C:\JI2STC\RouteAddIndividuals&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\JI2STC\RouteAddIndividuals&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\thales&quot;"/><line data="{VC++ 2012}"/><line data="{GitBash} -cur_console:n:d:&quot;C:\PortableApps\PortableApps\cmder&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\JI2STC\gittest&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="cmd -cur_console:n:d:&quot;C:\JI2STC\IntelligenceVisualAnalytics\database&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\MVAP\MVAP_database&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\JI2STC\lumify\web\war\src\main\webapp&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\dev\github&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\JI2STC\lumify&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\bigtable&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\miniweb&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\securegraph&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\lumify&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\JI2STC\CamelRouteSample&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="{GitBash} -cur_console:n:d:&quot;C:\JI2STC\SampleCamelRoute&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\JI2STC\CaseBasedReasoner\target\site\apidocs&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\JI2STC\CaseBasedReasoner\target\site\apidocs&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="cmd -cur_console:n:d:&quot;C:\dev\narayana-full-5.0.4.Final&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\dev\narayana-full-5.0.4.Final\bin&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\jbworkspace\camel-cxf-contract-first-blueprint&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\camel-trade&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="cmd -cur_console:n:d:&quot;C:\tmp2\jboss-eap-quickstarts-6.3.0.GA\wsat-simple&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\dev\jboss-eap-6.3&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\dev\forge-distribution-2.14.0.Final\bin&quot;"/>	<line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\tmp2\apache-camel-2.14.1\examples\camel-example-cxf-blueprint&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/>
+			<value name="CmdLineHistory" type="multi"><line data="&quot;C:\cygwin64\bin\mintty.exe&quot;  -i /Cygwin-Terminal.ico - -cur_console:n -cur_console:C:C:\cygwin64\Cygwin.ico"/><line data="C:\cygwin64\bin\mintty.exe -i /Cygwin-Terminal.ico - -cur_console:C:C:\cygwin64\Cygwin.ico"/><line data="{mintty}"/><line data="{cmd}"/><line data="{PowerShell}"/><line data="{GitBash}"/><line data="{OldGitBash}"/><line data="{Cygwin-mintty}"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\JI2STC\release&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="&quot;cmd.exe&quot;"/><line data="cmd"/><line data="{GitBash} -cur_console:n:d:&quot;C:\JI2STC\GitSync&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\JI2STC\GitSync\projects&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\dev\github\config\windows&quot;"/><line data="cmd -cur_console:n"/><line data="cmd -cur_console:n:d:&quot;C:\JI2STC\GitSync&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\git\PortableGit\usr\bin&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\git\PortableGit\bin&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\git-sdk-64\usr\src\MINGW-packages\mingw-w64-git\src\git&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\git-sdk-64\usr\src\MINGW-packages\mingw-w64-git\src\git\cmd&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\JI2STC\RouteAnnotatedDocument\RouteAnnotateDocumentFeature\target\RouteAnnotateDocumentFeature-1.0-SNAPSHOT\resources\etc\sample&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\JI2STC\RouteAnnotatedDocument\RouteAnnotateDocumentFeature\target\RouteAnnotateDocumentFeature-1.0-SNAPSHOT\resources\sql\RouteAnnotateDocument&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="{CygWin64}"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\branch-api-plugin&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\literate-plugin&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="cmd -cur_console:n:d:&quot;C:\dev\orientdb-community-2.0.11\bin&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\jboss-eap-6.1\bin&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\JI2STC\LumifyCSV&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\JI2STC&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\JI2STC\MultiReasonerInference&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\tmp2\release&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="cmd -cur_console:n:d:&quot;C:\JI2STC\RouteAddIndividuals&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\JI2STC\RouteAddIndividuals&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\thales&quot;"/><line data="{VC++ 2012}"/><line data="{GitBash} -cur_console:n:d:&quot;C:\PortableApps\PortableApps\cmder&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\JI2STC\gittest&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="cmd -cur_console:n:d:&quot;C:\JI2STC\IntelligenceVisualAnalytics\database&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\MVAP\MVAP_database&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\JI2STC\lumify\web\war\src\main\webapp&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\dev\github&quot;"/><line data="{GitBash} -cur_console:n:d:&quot;C:\JI2STC\lumify&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\bigtable&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\miniweb&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\securegraph&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\lumify&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\JI2STC\CamelRouteSample&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="{GitBash} -cur_console:n:d:&quot;C:\JI2STC\SampleCamelRoute&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\JI2STC\CaseBasedReasoner\target\site\apidocs&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\JI2STC\CaseBasedReasoner\target\site\apidocs&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="cmd -cur_console:n:d:&quot;C:\dev\narayana-full-5.0.4.Final&quot;"/><line data="cmd -cur_console:n:d:&quot;C:\dev\narayana-full-5.0.4.Final\bin&quot;"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\jbworkspace\camel-cxf-contract-first-blueprint&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/><line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\github\camel-trade&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/>	<line data="cmd -cur_console:n:d:&quot;C:\tmp2\jboss-eap-quickstarts-6.3.0.GA\wsat-simple&quot;"/>
+				<line data="cmd -cur_console:n:d:&quot;C:\dev\jboss-eap-6.3&quot;"/>
+				<line data="cmd -cur_console:n:d:&quot;C:\dev\forge-distribution-2.14.0.Final\bin&quot;"/>
+				<line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\tmp2\apache-camel-2.14.1\examples\camel-example-cxf-blueprint&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/>
 				<line data="cmd -cur_console:n:d:&quot;\\VBOXSVR\Documents\ESB&quot;"/>
 				<line data="C:\cygwin64\bin\bash.exe --login -i -c 'cd &quot;C:\dev\jboss-fuse-6.1.0.redhat-379&quot; ; exec bash' -cur_console:C:C:\cygwin64\Cygwin.ico -cur_console:n"/>
 				<line data="{GitBash} -cur_console:n:d:&quot;C:\dev\jboss-fuse-6.1.0.redhat-379\deploy&quot;"/>
@@ -149,11 +152,11 @@
 			<value name="ColorKeyValue" type="dword" data="00010101"/>
 			<value name="UseCurrentSizePos" type="hex" data="01"/>
 			<value name="WindowMode" type="dword" data="0000051f"/>
-			<value name="ConWnd Width" type="dword" data="000000af"/>
-			<value name="ConWnd Height" type="dword" data="0000002f"/>
+			<value name="ConWnd Width" type="dword" data="000000b1"/>
+			<value name="ConWnd Height" type="dword" data="00000032"/>
 			<value name="Cascaded" type="hex" data="01"/>
-			<value name="ConWnd X" type="long" data="185"/>
-			<value name="ConWnd Y" type="long" data="103"/>
+			<value name="ConWnd X" type="long" data="217"/>
+			<value name="ConWnd Y" type="long" data="48"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="AutoSaveSizePos" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
@@ -526,9 +529,9 @@
 			<value name="DndLKey" type="hex" data="00"/>
 			<value name="DndRKey" type="hex" data="a2"/>
 			<value name="WndDragKey" type="dword" data="00121101"/>
-				<key name="Tasks" modified="2016-06-22 14:42:48" build="160619">
-				<value name="Count" type="long" data="9"/>
-						<key name="Task1" modified="2016-06-22 14:42:48" build="160619">
+				<key name="Tasks" modified="2016-08-03 11:37:12" build="160619">
+				<value name="Count" type="long" data="10"/>
+						<key name="Task1" modified="2016-08-03 11:37:12" build="160619">
 					<value name="Name" type="string" data="{cmd}"/>
 					<value name="GuiArgs" type="string" data="/dir &quot;%USERPROFILE%&quot;"/>
 					<value name="Cmd1" type="string" data="-new_console:C:cmd.exe &quot;cmd.exe&quot;"/>
@@ -537,7 +540,7 @@
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="Flags" type="dword" data="00000000"/>
 				</key>
-						<key name="Task2" modified="2016-06-22 14:42:48" build="160619">
+						<key name="Task2" modified="2016-08-03 11:37:12" build="160619">
 					<value name="Name" type="string" data="{PowerShell}"/>
 					<value name="GuiArgs" type="string" data="/dir &quot;%USERPROFILE%&quot;"/>
 					<value name="Cmd1" type="string" data="PowerShell"/>
@@ -546,7 +549,7 @@
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="Flags" type="dword" data="00000000"/>
 				</key>
-						<key name="Task3" modified="2016-06-22 14:42:48" build="160619">
+						<key name="Task3" modified="2016-08-03 11:37:12" build="160619">
 					<value name="Name" type="string" data="{PowerShell (Admin)}"/>
 					<value name="GuiArgs" type="string" data="/dir &quot;%USERPROFILE&quot;"/>
 					<value name="Cmd1" type="string" data="PowerShell -new_console:a"/>
@@ -555,7 +558,7 @@
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="Flags" type="dword" data="00000000"/>
 				</key>
-						<key name="Task4" modified="2016-06-22 14:42:48" build="160619">
+						<key name="Task4" modified="2016-08-03 11:37:12" build="160619">
 					<value name="Name" type="string" data="{CygWin}"/>
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Cmd1" type="string" data="%ConEmuDrive%\cygwin\bin\bash.exe -new_console:C:%ConEmuDrive%\cygwin\Cygwin.ico --login -i"/>
@@ -564,7 +567,7 @@
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="Flags" type="dword" data="00000000"/>
 				</key>
-						<key name="Task5" modified="2016-06-22 14:42:48" build="160619">
+						<key name="Task5" modified="2016-08-03 11:37:12" build="160619">
 					<value name="Name" type="string" data="{CygWin64}"/>
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Cmd1" type="string" data="C:\cygwin64\bin\bash.exe -new_console:C:C:\cygwin64\Cygwin.ico --login -i"/>
@@ -573,7 +576,7 @@
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="Flags" type="dword" data="00000000"/>
 				</key>
-						<key name="Task6" modified="2016-06-22 14:42:48" build="160619">
+						<key name="Task6" modified="2016-08-03 11:37:12" build="160619">
 					<value name="Name" type="string" data="{MinGW}"/>
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Cmd1" type="string" data="%ConEmuDrive%\MinGW\msys\1.0\bin\bash.exe -new_console:C:%ConEmuDrive%\MinGW\msys\1.0\msys.ico --login -i"/>
@@ -582,7 +585,7 @@
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="Flags" type="dword" data="00000000"/>
 				</key>
-						<key name="Task7" modified="2016-06-22 14:42:48" build="160619">
+						<key name="Task7" modified="2016-08-03 11:37:12" build="160619">
 					<value name="Name" type="string" data="{VC++ 2012}"/>
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Cmd1" type="string" data="cmd /k &quot;C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\vcvars32.bat&quot; &quot;-new_console:C:C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\WDExpress.exe&quot;"/>
@@ -592,7 +595,7 @@
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="Flags" type="dword" data="00000000"/>
 				</key>
-						<key name="Task8" modified="2016-06-22 14:42:48" build="160619">
+						<key name="Task8" modified="2016-08-03 11:37:12" build="160619">
 					<value name="Name" type="string" data="{cmd &amp; PowerShell}"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data="/dir &quot;%USERPROFILE%&quot;"/>
@@ -602,20 +605,29 @@
 					<value name="Count" type="long" data="2"/>
 					<value name="Flags" type="dword" data="00000000"/>
 				</key>
-						<key name="Task9" modified="2016-06-22 14:42:48" build="160619">
+						<key name="Task9" modified="2016-08-03 11:37:12" build="160619">
 					<value name="Name" type="string" data="{GitBash}"/>
 					<value name="Hotkey" type="dword" data="00001147"/>
 					<value name="GuiArgs" type="string" data=""/>
-					<value name="Cmd1" type="string" data="%ConEmuDrive%\PortableApps\PortableApps\PortableGit\bin\bash.exe -new_console:C:%ConEmuDrive%\PortableApps\PortableApps\PortableGit\etc\git.ico --login -i"/>
+					<value name="Cmd1" type="string" data="%ConEmuDrive%\PortableApps\PortableApps\PortableGit\bin\bash.exe -new_console:C:%ConEmuDrive%\PortableApps\PortableApps\PortableGit\usr\share\git\git.ico --login -i"/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 					<value name="Flags" type="dword" data="00000000"/>
 				</key>
+				<key name="Task10" modified="2016-08-03 11:37:12" build="160619">
+					<value name="Name" type="string" data="{mintty}"/>
+					<value name="Flags" type="dword" data="00000000"/>
+					<value name="Hotkey" type="dword" data="00000000"/>
+					<value name="GuiArgs" type="string" data=""/>
+					<value name="Cmd1" type="string" data="C:\cygwin64\bin\mintty.exe -new_console:C:C:\cygwin64\Cygwin.ico  -i /Cygwin-Terminal.ico -"/>
+					<value name="Active" type="long" data="0"/>
+					<value name="Count" type="long" data="1"/>
+				</key>
 			</key>
-				<key name="Apps" modified="2016-06-22 14:42:48" build="160619">
+				<key name="Apps" modified="2016-08-03 11:37:12" build="160619">
 				<value name="Count" type="long" data="0"/>
 			</key>
-				<key name="Colors" modified="2016-06-22 14:42:48" build="160619">
+				<key name="Colors" modified="2016-08-03 11:37:12" build="160619">
 				<value name="Count" type="long" data="0"/>
 			</key>
 			<value name="SetDefaultTerminalStartupTSA" type="hex" data="01"/>
@@ -682,7 +694,7 @@
 			<value name="TabModifiedSuffix" type="string" data="[*]"/>
 			<value name="Update.InetTool" type="hex" data="00"/>
 			<value name="Update.InetToolCmd" type="string" data=""/>
-			<key name="HotKeys" modified="2016-06-22 14:42:48" build="160619">
+			<key name="HotKeys" modified="2016-08-03 11:37:12" build="160619">
 				<value name="KeyMacroVersion" type="hex" data="02"/>
 				<value name="Multi.Modifier" type="dword" data="0000005b"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
@@ -691,7 +703,7 @@
 				<value name="GlobalRestore" type="dword" data="00000000"/>
 				<value name="CdExplorerPath" type="dword" data="00000000"/>
 				<value name="ForcedFullScreen" type="dword" data="12115b0d"/>
-				<value name="SwitchGuiFocus" type="dword" data="00000000"/>
+				<value name="SwitchGuiFocus" type="dword" data="00005b5a"/>
 				<value name="SetFocusGui" type="dword" data="00000000"/>
 				<value name="SetFocusChild" type="dword" data="00000000"/>
 				<value name="ChildSystemMenu" type="dword" data="00000000"/>
