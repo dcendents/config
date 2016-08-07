@@ -17,6 +17,12 @@ Windows 10
 	- Set Show color on start, taskbar, action center, and title bar to on
 
 
+#### Disable Auto-Eject DVD Drive in Windows Explorer
+
+  1. Easy fix is to disable windows disc burning
+    - Run DiscBurningDisable.reg, then log off and log back in
+
+
 Windows 7
 ======
 
