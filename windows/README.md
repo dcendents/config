@@ -23,6 +23,14 @@ Windows 10
     - Run DiscBurningDisable.reg, then log off and log back in
 
 
+#### Disable Cortana
+
+  1. Open Local Group Policy Editor
+    - gpedit.msc
+  1. Goto Configuration > Administrative Templates > Windows Components > Search
+  1. Set the Allow Cortana option to “Disabled”
+
+
 Windows 7
 ======
 
