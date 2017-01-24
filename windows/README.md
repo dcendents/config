@@ -31,6 +31,19 @@ Windows 10
   1. Set the Allow Cortana option to “Disabled”
 
 
+#### Set Chrome as Default Browser
+
+  1. Open the Control Panel
+  1. Go to Default Programs > Set your default programs
+  1. Once the list populates, find Google Chrome
+  1. Select it and then press the "Set this program as Default" button
+
+
+#### Disable taskbar preview
+
+  1. Run Windows10DisableTaskbarPreview, then log off and log back in
+
+
 Windows 7
 ======
 

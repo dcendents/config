@@ -22,3 +22,20 @@ else
   exec -a "$0" "$HERE/chrome" --touch-devices=123 "$@"
 fi
 ```
+
+
+## Install Android SDK
+
+```bash
+sudo wget https://dl.google.com/android/android-sdk_r24.4.1-linux.tgz
+
+sudo tar zxvf android-sdk_r24.4.1-linux.tgz
+
+cd /android-sdk-linux/tools
+
+sudo ./android list sdk --all
+ 
+sudo ./android update sdk -u -a -t 32
+echo y | sudo ./android update sdk --no-ui --all --filter "tools,android-24,build-tools-24.0.0,platform-tools,extra-android-m2repository,extra-google-m2repository" 
+```
+

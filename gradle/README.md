@@ -1,6 +1,12 @@
 Gradle
 ======
 
+## Using a mirror (Nexus) for all repositories (i.e.: maven mirror)
+
+  - See script `init.gradle`
+  - If a username is required, see `add-password.gradle`
+
+
 #### Loading common config from a repository: 
 
 project build.gradle:

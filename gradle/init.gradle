@@ -1,0 +1,66 @@
+/**
+* init.gradle file for development using Nexus as proxy repository
+* 
+* @author Manfred Moser <manfred@simpligility.com
+* https://gist.github.com/mosabua/cd0d5a4ddac550273157
+*/
+
+initscript {
+	repositories {
+		jcenter()
+	}
+	dependencies {
+		classpath 'nu.studer:gradle-credentials-plugin:1.0.1'
+	}
+} 
+
+apply plugin: NexusRepositoryPlugin
+
+class NexusRepositoryPlugin implements Plugin<Gradle> {
+
+	final static String LOG_PREFIX = "init.gradle/NexusRepositoryPlugin:"
+
+	void apply(Gradle gradle) {
+		// Override all project specified Maven repos with standard defined in here
+		gradle.allprojects{ project ->
+			apply plugin: nu.studer.gradle.credentials.CredentialsPlugin
+			
+			final Closure NexusConfig = {
+				maven {
+					name = 'standard-nexus'
+					url = 'https://nexus.danielbeland.io/content/groups/public/'
+					credentials {
+						username project.credentials.nexusUsername
+						password project.credentials.nexusPassword
+					}
+				}
+				// if required you can add further repositories or groups here and they will
+				// be left intact if the name starts with standard-
+				// although it is better to just add those repositories in Nexus 
+				// and expose them via the public group
+			}
+
+			final Closure RepoHandler = {
+				all { ArtifactRepository repo ->
+					if (repo.name.toString().startsWith("standard-") ) {
+						println "$LOG_PREFIX    $repo.name at $repo.url activated as repository."
+					} else {
+						if (repo instanceof MavenArtifactRepository) {
+							remove repo
+							println "$LOG_PREFIX    $repo.name at $repo.url removed."
+						} else {
+							println "$LOG_PREFIX    $repo.name kept (not a Maven repository)."
+						}
+					}
+				}
+			}
+			println "$LOG_PREFIX  Reconfiguring repositories and buildscript repositories."
+			project.repositories RepoHandler
+			project.buildscript.repositories RepoHandler
+
+			// The minecraftforge repo has problems being proxied so we need to leave it in place directly.
+			project.repositories NexusConfig
+			project.buildscript.repositories NexusConfig
+		}
+	}
+}
