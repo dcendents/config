@@ -7,57 +7,62 @@ Gradle
   - If a username is required, see `add-password.gradle`
 
 
-#### Loading common config from a repository: 
+## Loading common config from a repository: 
 
-project build.gradle:
+#### project build.gradle:
 
-	buildscript { 
-		// Define the repository where CommonConfig will be found
-		repositories {
-			mavenLocal()
-		}
-
-		def dep = project.dependencies.create('org.test:CommonConfig:1.0.0')
-		def conf = buildscript.configurations.detachedConfiguration(dep)
-		conf.setTransitive(false)
-		
-		conf.resolve().each {
-			apply from: new URL("jar:${it.toURI()}!/repositories.gradle").toURI()
-			apply from: new URL("jar:${it.toURI()}!/buildscriptDependencies.gradle").toURI()
-		}
-		
-		dependencies {
-			classpath(dep)
-		}
+```gradle
+buildscript { 
+	// Define the repository where CommonConfig will be found
+	repositories {
+		mavenLocal()
 	}
 
-	apply from: project.buildscript.classLoader.getResource('sharedConfig.gradle').toURI()
+	def dep = project.dependencies.create('org.test:CommonConfig:1.0.0')
+	def conf = buildscript.configurations.detachedConfiguration(dep)
+	conf.setTransitive(false)
 
-
-repositories.gradle:
-
-	project.buildscript.repositories.clear()
-
-	project.buildscript {
-		repositories {
-			maven {
-				name 'GlobalRepositoryReleases'
-				url project.properties.repoPath + "/Releases"
-			}
-			maven {
-				name 'GlobalRepository3rdParty'
-				url project.properties.repoPath + "/3rdParty"
-			}
-			mavenCentral()
-			mavenLocal()
-		}
+	conf.resolve().each {
+		apply from: new URL("jar:${it.toURI()}!/repositories.gradle").toURI()
+		apply from: new URL("jar:${it.toURI()}!/buildscriptDependencies.gradle").toURI()
 	}
 
-buildscriptDependencies.gradle:
-
-	project.buildscript {
-		dependencies {
-			classpath 'com.android.tools.build:gradle:0.11.1',
-					'com.github.dcendents:android-maven-plugin:1.0'
-		}
+	dependencies {
+		classpath(dep)
 	}
+}
+
+apply from: project.buildscript.classLoader.getResource('sharedConfig.gradle').toURI()
+```
+
+#### repositories.gradle:
+
+```gradle
+project.buildscript.repositories.clear()
+
+project.buildscript {
+	repositories {
+		maven {
+			name 'GlobalRepositoryReleases'
+			url project.properties.repoPath + "/Releases"
+		}
+		maven {
+			name 'GlobalRepository3rdParty'
+			url project.properties.repoPath + "/3rdParty"
+		}
+		mavenCentral()
+		mavenLocal()
+	}
+}
+```
+
+#### buildscriptDependencies.gradle:
+
+```gradle
+project.buildscript {
+	dependencies {
+		classpath 'com.android.tools.build:gradle:0.11.1',
+				'com.github.dcendents:android-maven-plugin:1.0'
+	}
+}
+```
