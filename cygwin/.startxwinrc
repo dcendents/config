@@ -1,1 +1,0 @@
-xterm -display 127.0.0.1:0.0 -ls -bg black -fg yellow -cr red -ms red -j -s -sb -rightbar -sl 10000 +tb

@@ -5,9 +5,9 @@ set -o emacs
 
 #export PS1='$PWD>'
 
-. /cygdrive/c/git/PortableGit/mingw64/share/git/completion/git-prompt.sh
+. /cygdrive/c/PortableApps/PortableApps/PortableGit/mingw64/share/git/completion/git-prompt.sh
 function parse_git_dirty {
-  [[ ! $(git status 2> /dev/null | tail -n1) =~ ^.*nothing.*to.*commit.*working.*directory.*clean.*$ ]] && echo "*"
+  [[ ! $(git status 2> /dev/null | tail -n1) =~ ^.*nothing.*to.*commit.*working.*tree.*clean.*$ ]] && echo "*"
 }
 function parse_git_ahead {
   [[ $(git status 2> /dev/null | grep "Your branch") =~ .*Your[[:space:]]branch[[:space:]]is[[:space:]]ahead[[:space:]]of[[:space:]].*[[:space:]]by[[:space:]](.*)[[:space:]]commit.* ]] && echo "+${BASH_REMATCH[1]}"
@@ -17,18 +17,26 @@ function parse_git_behind {
 }
 export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w \[\033[31m\]$(__git_ps1 "(%s$(parse_git_dirty)$(parse_git_ahead)$(parse_git_behind))")\[\e[0m\]\n\$ '
 
+alias weather="echo 'curl --proxy http://10.94.134.70:8080 wttr.in/sainte-foy,canada' ; curl --proxy http://10.94.134.70:8080 wttr.in/sainte-foy,canada"
 
-
-alias ll="ls -l"
+alias ll="ls -la"
 
 alias "c:"="cd /cygdrive/c"
 export C=/cygdrive/c
 
 #alias xx="xterm -bg black -fg yellow -cr red -ms red -j -s -sb -rightbar -sl 10000 +tb"
 
+export MAVEN_OPTS_JAVA7="-Djansi.force=true -Xmx1024m -XX:MaxPermSize=256m -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dmaven.ext.class.path=C:/Users/dbeland/.m2/maven-notifier-1.10.1.jar"
+export MAVEN_OPTS_JAVA8="-Djansi.force=true -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dmaven.ext.class.path=C:/Users/dbeland/.m2/maven-notifier-1.10.1.jar"
+
+
 alias java6="export JAVA_HOME=\"C:\\Program Files\\Java\\jdk1.6.0_43\""
-alias java7="export JAVA_HOME=\"C:\\Program Files\\Java\\jdk1.7.0_79\""
-alias java8="export JAVA_HOME=\"C:\\Program Files\\Java\\jdk1.8.0_51\""
+alias java7="export JAVA_HOME=\"C:\\Program Files\\Java\\jdk1.7.0_79\" ; export MAVEN_OPTS=\"$MAVEN_OPTS_JAVA7\""
+alias java7o="export JAVA_HOME=\"C:\\Program Files\\Java\\jdk1.7.0_05\""
+alias java8="export JAVA_HOME=\"C:\\Program Files\\Java\\jdk1.8.0_121\" ; export MAVEN_OPTS=\"$MAVEN_OPTS_JAVA8\""
+alias java8o="export JAVA_HOME=\"C:\\dev\\java\\jdk8u212-b03\" ; export MAVEN_OPTS=\"$MAVEN_OPTS_JAVA8\""
+alias java8oj9="export JAVA_HOME=\"C:\\dev\\java\\jdk8u212-b03_openj9\" ; export MAVEN_OPTS=\"$MAVEN_OPTS_JAVA8\""
+alias java11j9="export JAVA_HOME=\"C:\\dev\\java\\jdk-11.0.2+9_openj9-0.12.1\" ; export MAVEN_OPTS=\"$MAVEN_OPTS_JAVA8\""
 
 java8
 
@@ -38,18 +46,23 @@ export WH="$WINHOME"
 export WK=/cygdrive/c/JI2STC
 alias wk="cd $WK"
 
-export MAVEN_OPTS="-Xmx1024M -XX:MaxPermSize=256M -Dmaven.ext.class.path=C:/Users/dbeland/.m2/maven-notifier-1.8-shaded.jar"
-# See https://github.com/jcgay/maven-color for the binaries
-# Also copy maven-color-logger-0.4.jar in $M2_HOME/lib/ext
+export WKC=/cygdrive/c/CSIAPSW
+alias wkc="cd $WKC"
+
+alias mvnc="mvn -s C:/Users/dbeland/.m2/settings-csiaps.xml"
+alias mvns="mvn -s C:/Users/dbeland/.m2/settings-sasnet.xml"
+alias mvno="mvn -s C:/Users/dbeland/.m2/settings-osus.xml"
 
 alias checksite="open target/pdf/*.pdf target/staging/*/index.html"
+
+alias gradlew="./gradlew --console=rich"
 
 #alias np="/cygdrive/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe"
 function np() { 
 	for file in "$@"
 	do
 		winfile=$(cygpath -w "$file")
-		/cygdrive/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe "$winfile"
+		/cygdrive/c/PortableApps/PortableApps/Notepad++Portable/Notepad++Portable.exe "$winfile"
 	done
 }
 
@@ -58,6 +71,14 @@ function open() {
 	do
 		winfile=$(cygpath -w "$file")
 		explorer "$winfile"
+	done
+}
+
+function gitex() { 
+	for file in "$@"
+	do
+		windir=$(cygpath -w "$file")
+		/cygdrive/c/PortableApps/PortableApps/GitExtensions/GitExtensions.exe browse "$windir" &
 	done
 }
 
