@@ -2,6 +2,36 @@
 
 # Linux
 
+## GNOME
+
+`sudo apt install gnome-tweak-tool`
+
+- Dash to Panel: https://extensions.gnome.org/extension/1160/dash-to-panel/
+  - To customize the taskbar, can make it more windows like
+
+- Multi Monitors Add-On: https://extensions.gnome.org/extension/921/multi-monitors-add-on/
+  - Primarily to make all monitors switch when we switch workspace
+
+
+## RDP on multiple monitors
+
+Use FreeRDP:
+
+`sudo apt install freerdp2-x11`
+
+`xfreerdp /multimon /u:username /microphone /sound /fonts /network:auto +aero /gfx /v:192.168.0.10`
+
+## Geany
+
+Fix for missing `_` 
+
+Tools > Configuration Files > filetypes.common
+
+```
+[styling]
+line_height=0;2;
+```
+
 ## Free space in /boot (remove all unused kernels)
 
 `sudo apt-get purge $(dpkg -l linux-{image,headers}-"[0-9]*" | awk '/ii/{print $2}' | grep -ve "$(uname -r | sed -r 's/-[a-z]+//')")`
