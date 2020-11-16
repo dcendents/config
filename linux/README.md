@@ -12,6 +12,14 @@
 - Multi Monitors Add-On: https://extensions.gnome.org/extension/921/multi-monitors-add-on/
   - Primarily to make all monitors switch when we switch workspace
 
+#### Keyboard switch not working
+
+When switching the keyboard seems to work (in language bar) but the actual keys still output the other keyboard, refresh GNOME.
+
+- ALT-F2
+- r
+- ENTER
+
 
 ## RDP on multiple monitors
 
