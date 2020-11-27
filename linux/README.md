@@ -40,6 +40,12 @@ Tools > Configuration Files > filetypes.common
 line_height=0;2;
 ```
 
+## KDiff3
+
+Fix for missing `_` 
+
+Settings > Configure Kdiff3 > File view font > Arial Regular 11
+
 ## Free space in /boot (remove all unused kernels)
 
 `sudo apt-get purge $(dpkg -l linux-{image,headers}-"[0-9]*" | awk '/ii/{print $2}' | grep -ve "$(uname -r | sed -r 's/-[a-z]+//')")`
