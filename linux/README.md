@@ -14,11 +14,24 @@
 
 #### Keyboard switch not working
 
+##### Option 1
+
 When switching the keyboard seems to work (in language bar) but the actual keys still output the other keyboard, refresh GNOME.
 
 - ALT-F2
 - r
 - ENTER
+
+##### Option 2
+
+Open the `Language and Region` settings and switch the keyboards order.
+
+
+### Restart GNOME (frozen)
+
+Log in through ssh or open a prompt (CTRL-ALT-F3)
+
+`sudo killall -3 gnome-shell`
 
 
 ## RDP on multiple monitors
