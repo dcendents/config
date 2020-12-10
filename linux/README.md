@@ -2,6 +2,18 @@
 
 # Linux
 
+## Swap
+
+swappiness: Start swapping when free RAM is down to that level.
+
+- To change the swappiness level temporarily: `sudo sysctl vm.swappiness=10`
+- To change it permanently: 
+    - `vi /etc/sysctl.conf`
+    - Add a line at the bottom: `vm.swappiness=10`
+- To check current swappiness level: `cat /proc/sys/vm/swappiness`
+- To turn off swap completely: `sudo swapoff -a` (will not persist after a reboot)
+
+
 ## GNOME
 
 `sudo apt install gnome-tweak-tool`
